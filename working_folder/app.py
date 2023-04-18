@@ -381,6 +381,20 @@ def fire_cause_data():
     connection.close()
     return jsonify(fire_causes)
 
+@app.route('/fire_heatmap')
+def fire_heatmap():
+   markers=[
+   {
+   'lat':0,
+   'lon':0,
+   'popup':'This is the middle of the map.'
+    }
+   ]
+   return render_template('index.html',markers=markers )
+
+# @app.route("/fire_heatmap")
+# def fire_heatmap():
+#     pass
 
 if __name__ == '__main__':
     app.run(debug=True)
