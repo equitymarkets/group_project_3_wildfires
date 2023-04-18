@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 3 - Wildfires</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin="" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/layout.css') }}"> 
+
+  
+
+  
+</head>
+<body>
+
+  <header>
+    <h1 id="header-text">Wildfires in the US</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <strong>
+      <li><a href="#scatter">Fires By State</a></li>
+      <li><a href="#bar">Total Acreage Burned</a></li>
+      <li><a href="#pie">Causes of Wildfires</a></li>
+      <li><a href="#map">Fire Map</a></li>
+      <li><a href="#chart_5">Chart 5</a></li>
+      <li><a href="#chart_6">Chart 6</a></li>
+      </strong>
+    </ul>
+  </nav>
+
+  <div class="row" id="linechart">
+    <figure id="scatter"></div>
+      <select id="selDataset" onchange="getData(this.value)">
+        <option value="total">United States</option>
+        <option value="ak">Alaska</option>
+        <option value="ca">California</option>
+        <option value="id">Idaho</option>
+        <option value="tx">Texas</option>
+        <option value="nv">Nevada</option>
+        <option value="or">Oregon</option>
+        <option value="mt">Montena</option>
+        <option value="az">Arizona</option>
+        <option value="nm">New Mexico</option>
+        <option value="wa">Washington</option>
+      </select> 
+    </figure>
+  </div>
+
+  
+
+  <div class="row" id="barchart">        
+    <figure id="bar"></div>
+      <select id="selDataset2" onchange="getData2(this.value)">
+        <option value="acre">All Years</option>
+        <option value="acre_2020">2020</option>
+        <option value="acre_2019">2019</option>
+        <option value="acre_2018">2018</option>
+        <option value="acre_2017">2017</option>
+        <option value="acre_2016">2016</option> 
+      </select> 
+    </figure>
+  </div>
+
+  <div class="row" id="piechart">
+    <figure id="pie">
+
+    </figure>
+  </div>
+
+  <div id="map"></div>
+  
+  <footer><h4>Data Sources:</h4>
+    <ul>
+        <li>
+            <a href="https://data.worldbank.org/indicator/NE.CON.GOVT.ZS">General government final consumption expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS">Government expenditure on education, total (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS">Domestic general government health expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">Research and development expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">GDP (current US$)</a>
+        </li>
+    </ul>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script src="static/js/app_heat.js"></script>
+  <script src="static/js/app_years.js"></script>
+  <script src="static/js/app_states.js"></script>
+  <script src="static/js/app_cause.js"></script>
+</body>
+<!-- <body>
+ 
+  <header>
+    <h1>Wildfires in the US</h1>
+  </header>
+  <nav>
+    <ul>
+      <strong>
+      <li><a href="#scatter">Fires By State</a></li>
+      <li><a href="#bar">Total Acreage Burned</a></li>
+      <li><a href="#pie">Causes of Wildfires</a></li>
+      <li><a href="#heat">Fire Map</a></li>
+      <li><a href="#chart_5">Chart 5</a></li>
+      <li><a href="#chart_6">Chart 6</a></li>
+      </strong>
+    </ul>
+  </nav>
+  <main>
+    <div class="row" id="linechart">
+      <figure id="scatter"></div>
+        <select id="selDataset" onchange="getData(this.value)">
+          <option value="total">United States</option>
+          <option value="ak">Alaska</option>
+          <option value="ca">California</option>
+          <option value="id">Idaho</option>
+          <option value="tx">Texas</option>
+          <option value="nv">Nevada</option>
+          <option value="or">Oregon</option>
+          <option value="mt">Montena</option>
+          <option value="az">Arizona</option>
+          <option value="nm">New Mexico</option>
+          <option value="wa">Washington</option>
+        </select> 
+      </figure>
+    </div>
+    <div class="row" id="barchart">        
+      <figure id="bar"></div>
+        <select id="selDataset2" onchange="getData2(this.value)">
+          <option value="acre">All Years</option>
+          <option value="acre_2020">2020</option>
+          <option value="acre_2019">2019</option>
+          <option value="acre_2018">2018</option>
+          <option value="acre_2017">2017</option>
+          <option value="acre_2016">2016</option> 
+        </select> 
+      </figure>
+    </div>
+    <div class="row" id="piechart">
+      <figure id="pie"></div>
+  
+      </figure>
+    </div>
+    <div class="row" id="heatmap">
+        <figure id="map">
+    
+        </figure>
+    </div>
+    <div class="row" id="chart5">
+      <figure id="chart_5"></div>
+  
+      </figure>
+    </div>
+    <div class="row" id="chart6">
+      <figure id="chart_6"></div>
+  
+      </figure>
+    </div>
+
+  </main>
+
+  <footer><h4>Data Sources:</h4>
+    <ul>
+        <li>
+            <a href="https://data.worldbank.org/indicator/NE.CON.GOVT.ZS">General government final consumption expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS">Government expenditure on education, total (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS">Domestic general government health expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">Research and development expenditure (% of GDP)</a>
+        </li>
+        <li>
+            <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">GDP (current US$)</a>
+        </li>
+    </ul>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+ 
+  
+  <script src="static/js/app_heat.js"></script>
+  <script src="static/js/app_years.js"></script>
+  <script src="static/js/app_states.js"></script>
+  <script src="static/js/app_cause.js"></script>
+  
+
+</body> -->
+
+</html>
