@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 3 - Wildfires</title>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="row" id="linechart">
+      <div class="col-md-8">
+        <div id="scatter"></div>
+        <select id="selDataset" onchange="getData(this.value)">
+          <option value="total">United States</option>
+          <option value="ak">Alaska</option>
+          <option value="ca">California</option>
+          <option value="id">Idaho</option>
+          <option value="tx">Texas</option>
+          <option value="nv">Nevada</option>
+          <option value="or">Oregon</option>
+          <option value="mt">Montena</option>
+          <option value="az">Arizona</option>
+          <option value="nm">New Mexico</option>
+          <option value="wa">Washington</option>
+    
+
+        </select>
+      </div>
+    </div>
+  </div>
+
+    <div class="row" id="barchart">
+      <div class="col-md-8">
+        <div id="bar"></div>
+        <select id="selDataset2" onchange="getData2(this.value)">
+          <option value="acre">All Years</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+         
+        </select>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="row" id="piechart">
+  <div class="col-md-8">
+    <div id="pie"></div>
+    <select id="selDataset3" onchange="getData3(this.value)">
+      <option value="fire_cause">All Years</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+    </select>
+  </div>
+</div>
+
+ 
+      
+    </select>
+  </div>
+</div>
+
+  <script src="./static/js/app_years2.js"></script>
+  <script src="./static/js/app_states2.js"></script>
+  <script src="./static/js/app_cause2.js"></script>
+
+</body>
+<p>Data Sources:<br />
+  <ul>
+      <li>
+          <a href="https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition">Project Dataset - 2.3 Million US Wildfires((1992-2020))</a>
+      </li>
+      <li>
+</p>
+
+</html>
