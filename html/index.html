@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Project 3 - Wildfires</title>
+  <link rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin="" />
@@ -39,15 +41,13 @@
         <option value="tx">Texas</option>
         <option value="nv">Nevada</option>
         <option value="or">Oregon</option>
-        <option value="mt">Montena</option>
+        <option value="mt">Montana</option>
         <option value="az">Arizona</option>
         <option value="nm">New Mexico</option>
         <option value="wa">Washington</option>
       </select> 
     </figure>
   </div>
-
-  
 
   <div class="row" id="barchart">        
     <figure id="bar"></figure>
@@ -64,45 +64,24 @@
 
   <div class="row" id="piechart">
     <figure id="pie"></figure>
-      <select id="selDataset3" onchange="getData3(this.value)">
-        <option value="fire_cause">All Years</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-        <option value="2015">2015</option>
-      </select> 
-    
+    <select id="selDataset3" onchange="getData3(this.value)">
+      <option value="fire_cause">All Years</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+    </select> 
   </div>
-  
-    
-      <!-- <div id="pie"></div> -->
-      
- 
-  
-  <div id="map"></div>
+
+  <section id="map"></section>
   
   <footer><h4>Data Sources:</h4>
     <ul>
-        <!-- <li>
-            <a href="https://data.worldbank.org/indicator/NE.CON.GOVT.ZS">General government final consumption expenditure (% of GDP)</a>
+        <li>
+          <a href="https://www.census.gov/data/tables/time-series/dec/density-data-text.html">Historical Population Density Data (1910-2020)</a>
         </li>
-        <li>
-            <a href="https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS">Government expenditure on education, total (% of GDP)</a>
-        </li>
-        <li>
-            <a href="https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS">Domestic general government health expenditure (% of GDP)</a>
-        </li>
-        <li>
-            <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">Research and development expenditure (% of GDP)</a>
-        </li>
-        <li>
-            <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">GDP (current US$)</a>
-        </li> -->
-        <li>
-        <a href="https://www.census.gov/data/tables/time-series/dec/density-data-text.html">Historical Population Density Data (1910-2020)</a>
-      </li>
         <li>
           <a href="https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition">Project Dataset - 2.3 Million US Wildfires((1992-2020))</a>
         </li>

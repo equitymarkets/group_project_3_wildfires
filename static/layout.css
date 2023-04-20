@@ -1,3 +1,88 @@
+/* 
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+#map {
+    width: 95%;
+}
+
+    
+html, body, #map {
+    height: 100%;
+
+}
+
+header {
+    background-color: #606c38;
+    color: #ffffff;
+    margin: auto;
+    position: relative;
+    display: grid;
+    height: 30%;
+    width: auto;
+    text-align: center;
+    border-radius: 3px;
+    align-items: center;
+  }
+  header::before {
+    opacity: .35;
+    content: "";
+    
+    background-image: url('smokey_bear.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  #header-text {
+        
+        font-size: 3.8em;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+nav, footer {
+    background-color: #283618;
+    width: 100%;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Georgia, serif;
+    
+} 
+
+nav ul li {
+    float: left;
+} 
+
+nav ul li a, footer ul li a {
+    display: block;
+    padding: 8px;
+    color: #ffffff; 
+    text-decoration: none;
+}
+nav ul li a:hover, footer ul li a:hover {
+    color: #dda15e;
+}
+footer {
+    padding: 1%;
+    font-family: Georgia, serif;
+
+ 
+}  */
+
+
 /* #606c38 #283618 #fefae0 #dda15e #bc6c25 */
 /* green   pine    off-white   tan  brown  */
 body {
