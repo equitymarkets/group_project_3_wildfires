@@ -191,6 +191,14 @@ def firecount():
 def fire_count_cause():
     return render_template('fire_count_cause.html')
 
+@app.route('/fire_size_cause')
+def fire_size_cause():
+    return render_template('fire_size_cause.html')
+
+@app.route('/sizes')
+def sizes():
+    return render_template('sizes.html')
+
 if __name__ == "__main__":
     app.run(debug = True)
 
