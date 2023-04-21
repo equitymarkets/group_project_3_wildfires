@@ -1,6 +1,6 @@
 # Project 3: Wildfires 🔥
 
-<img width="613" alt="Screenshot 2023-04-10 at 8 03 46 PM" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
+<img width="100%" alt="Screenshot 2023-04-10 at 8 03 46 PM" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
 
 ## Requirements:
 
