@@ -371,6 +371,7 @@ def geojson_data():
     connection.close()
     return jsonify(geojson)
 
+#fire heatmap
 @app.route('/fire_heatmap')
 def fire_heatmap():
    markers=[
@@ -381,6 +382,11 @@ def fire_heatmap():
     }
    ]
    return render_template('index.html',markers=markers )
+
+#photos and/or bullet points explaining data
+@app.route('/fire_count')
+def firecount():
+ return render_template('fire_count.html')
 
 if __name__ == "__main__":
     app.run(debug = True)
