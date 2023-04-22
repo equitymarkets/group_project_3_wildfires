@@ -1,112 +1,24 @@
-/* 
-body {
-
-    margin: 0;
-    padding: 0;
-    background-color: #F9F9F9;
-}
-#map {
-    width: 95%;
-}
-
-    
-html, body, #map {
-    height: 100%;
-
-}
-
-header {
-    background-color: #606c38;
-    color: #ffffff;
-    margin: auto;
-    position: relative;
-    display: grid;
-    height: 30%;
-    width: auto;
-    text-align: center;
-    border-radius: 3px;
-    align-items: center;
-  }
-  header::before {
-    opacity: .35;
-    content: "";
-    
-    background-image: url('smokey_bear.jpeg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-  }
-  #header-text {
-        
-        font-size: 3.8em;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-
-nav, footer {
-    background-color: #283618;
-    width: 100%;
-    color: #ffffff;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: Georgia, serif;
-    
-} 
-
-nav ul li {
-    float: left;
-} 
-
-nav ul li a, footer ul li a {
-    display: block;
-    padding: 8px;
-    color: #ffffff; 
-    text-decoration: none;
-}
-nav ul li a:hover, footer ul li a:hover {
-    color: #dda15e;
-}
-footer {
-    padding: 1%;
-    font-family: Georgia, serif;
-
- 
-}  */
-
-
 /* #606c38 #283618 #fefae0 #dda15e #bc6c25 */
 /* green   pine    off-white   tan  brown  */
 body {
-    /* border: 1px solid black; */
-    /* padding: 2%; */
     margin: 0;
     padding: 0;
-    background-color: #F9F9F9;
+    background-color: #E7EFE9;
 }
-/* html, body, #map {
-    height: 100%;
-    width: 100vw;
-    } */
-    
+
 html, body, #map {
     height: 100%;
-    /* width: 100vw; */
 }
-/* header {
-    color: #073b4c; 
-    margin: auto;
-    width: 30%;
-} */
-/*------------------------------------------------------------------------*/
+
+#map { 
+    width: 96%;
+    margin: 2vw;
+    border-radius: 25px;
+}
+
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+
 header {
     background-color: #606c38;
     color: #ffffff;
@@ -122,7 +34,6 @@ header {
   header::before {
     opacity: .35;
     content: "";
-    
     background-image: url('smokey_bear.jpeg');
     background-size: cover;
     position: absolute;
@@ -131,19 +42,43 @@ header {
     left: 0px;
     right: 0px;
   }
+
   #header-text {
-        
         font-size: 3.8em;
         position: relative;
         text-align: center;
         color: white;
     }
-/*------------------------------------------------------------------------*/
-/* nav {
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-} */
+
+.grid-box {
+    display: grid;
+    grid-gap: 2vw;
+    object-fit: fill;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+  }
+
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    object-fit: cover;
+} 
+
+@media only screen and (max-width: 1000px) {
+    .grid-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.grid-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+}
+
 nav, footer {
     background-color: #283618;
     width: 100%;
@@ -155,8 +90,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: Georgia, serif;
-    
+    font-family: Georgia, serif;  
 } 
 
 nav ul li {
@@ -168,17 +102,14 @@ nav ul li a, footer ul li a {
     padding: 8px;
     color: #ffffff; 
     text-decoration: none;
-    /* Make sure that a:link and a:visited come before a:hover, and a:active comes last. This is essential to the cascading of the stylesheet. */
-} 
+}
+
 nav ul li a:hover, footer ul li a:hover {
     color: #dda15e;
 }
+
 footer {
-    /* padding: 1%; */
     font-family: Georgia, serif;
-    /* background-color: #4267B2;
-    width: 100%; */
- 
 } 
 
 
