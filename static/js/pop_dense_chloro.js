@@ -1,12 +1,15 @@
-var map = L.map('map').setView([37.8, -96], 4);
+//Original pop_dense_chloro.js maps
+let map = L.map('map').setView([37.8, -96], 4);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	}).addTo(map);; 
+	}).addTo(map); 
 
-		// control that shows state info on hover
-		var info = L.control();
+
+
+		//control that shows state info on hover
+		let info = L.control();
 
 		info.onAdd = function () {
 			this._div = L.DomUtil.create('div', 'info');
@@ -59,7 +62,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		}
 
 		// Population density data //
-		var geojson = L.geoJson(PopData, {
+		let geojson = L.geoJson(PopData, {
 			style,
 			onEachFeature
 		}).addTo(map);
@@ -84,13 +87,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		map.attributionControl.addAttribution('Population data &copy; <a href="https://www.census.gov/data/tables/time-series/dec/density-data-text.html">US Census Bureau</a>');
 
 
-		var legend = L.control({position: 'bottomright'});
+		let legend = L.control({position: 'bottomright'});
 
 		legend.onAdd = function (_map) {
 
-			var div = L.DomUtil.create('div', 'info legend');
-			var grades = [0, 10, 20, 50, 100, 200, 300, 500];
-			var labels = [];
+			let div = L.DomUtil.create('div', 'info legend');
+			let grades = [0, 10, 20, 50, 100, 200, 300, 500];
+			let labels = [];
 			let from, to;
 
 			for (let i = 0; i < grades.length; i++) {
