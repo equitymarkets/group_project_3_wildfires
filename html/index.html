@@ -16,8 +16,7 @@
   
   </head>
 
-  <body>
-
+  
     <!-- <article>
       <aside>
       <details>
@@ -35,7 +34,8 @@
     <header>
       <h1 id="header-text">Wildfires in the US</h1>
     </header>
-
+    <body>
+      
     <nav>
       <ul>
         <strong>
@@ -43,12 +43,29 @@
         <li><a href="#bar">Total Acreage Burned</a></li>
         <li><a href="#pie">Causes of Wildfires</a></li>
         <li><a href="#map">Fire Map</a></li>
+        <li><a href="#map2">Population Map</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#chart_6">Chart 6</a></li>
+        
         </strong>
       </ul>
     </nav>
+    <div id ="map-grid">
+      <div id="map"></div>
 
+      <div id="map2"></div>
+    </div>
+    <section class="row" id="barchart">        
+      <figure id="bar"> </figure>
+      <select id="selDataset2" onchange="getData2(this.value)">
+        <option value="acre">All Years</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+      </select> 
+      </figure>
+    </section>
     <section class="row" id="linechart">
       <figure id="scatter"></figure>
       <select id="selDataset" onchange="getData(this.value)">
@@ -64,36 +81,27 @@
         <option value="nm">New Mexico</option>
         <option value="wa">Washington</option>
       </select> 
-    </section>
+    </section> 
 
-    <section class="row" id="barchart">        
-      <figure id="bar"> </figure>
-      <select id="selDataset2" onchange="getData2(this.value)">
-        <option value="acre">All Years</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-      </select> 
-      </figure>
-    </section>
-
-    <section class="row" id="piechart">
-      <figure id="pie"></figure>
-      <select id="selDataset3" onchange="getData3(this.value)">
-        <option value="fire_cause">All Years</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-        <option value="2015">2015</option>
-      </select> 
-    </section>
-
-    <section id="map"></section>
     
+
+    <div class="row" id="piechart">
+      <figure id="pie"></figure>
+      <!-- <div class = "dropdown-container"> -->
+        <select id="selDataset3" onchange="getData3(this.value)">
+          <option value="fire_cause">All Years</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+        </select> 
+      <!-- </div> -->
+    </div>
+    
+    
+
     <summary class="grid-box" id="gallery">
       <a href="fire_count"><img src="{{url_for('static', filename='fire_count.png')}}" width="100%" height="100%"></a>
       <a href="fire_count_cause"><img src="{{url_for('static', filename='fire_count_cause.png')}}" width="100%" height="100%"></a>
@@ -119,13 +127,15 @@
       crossorigin=""></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="static/js/leaflet-heatmap.js"></script>
+    <script src="static/js/heatmap.js"></script>
 
-    
     <script src="static/js/pop_dense_data.js"></script>
     <script src="static/js/pop_dense_chloro.js"></script>
     <script src="static/js/pop_dense_chg_chloro.js"></script>
+   
     
-    <script src="static/js/app_heat.js"></script>
+    <!-- <script src="static/js/app_heat.js"></script> -->
     <script src="static/js/app_years.js"></script>
     <script src="static/js/app_states.js"></script>
     <script src="static/js/app_cause.js"></script>
