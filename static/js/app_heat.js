@@ -3,12 +3,8 @@
 
 
 let defaultURL4 = "/heatmap";
-let defaultURL5 = "/PopData"
 d3.json(defaultURL4).then(function(heat_data) {
-  d3.json(defaultURL5).then(function (choro_data){
   console.log(heat_data)
-  console.log(choro_data)
-
 
   let map_data = heat_data;
 
@@ -50,7 +46,21 @@ let myMap = L.map("map", {
   layers: [baseLayer, heatmapLayer]
 });
 
-})
+// // control that shows state info on hover
+let title = L.control();
+
+title.onAdd = function () {
+  this._div = L.DomUtil.create('div', 'info');
+  this.update();
+  return this._div;
+};
+
+title.update = function () {
+  this._div.innerHTML = '<h4>Heat Map of US Wildfires<br />Year: 2020</h4>';
+};
+
+title.addTo(myMap);
+
 });
 
 
