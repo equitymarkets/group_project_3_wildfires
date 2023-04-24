@@ -51,13 +51,14 @@ def total_data():
     connection = engine.connect()
 
     # Query for total fires per year US
-    total_fire = "select fire_year, count(state) as state_count from fires where fire_year >= 1992 group by fire_year order by fire_year"
+    total_fire = "select fire_year, count(state) as state_count, avg(fire_size) as avg_size from fires where fire_year >= 1992 group by fire_year order by fire_year"
     # United_States_total = pd.read_sql(total_fire, connection)
     United_States_total = pd.read_sql(total_fire, connection)
     # Format the data for Plotly
     US = {
-        "x": United_States_total["FIRE_YEAR"].values.tolist(),
-        "y": United_States_total["state_count"].values.tolist(),
+        "year": United_States_total["FIRE_YEAR"].values.tolist(),
+        "count": United_States_total["state_count"].values.tolist(),
+        "size": United_States_total["avg_size"].values.tolist(),
         "type": "'mtatter'"
     }
     connection.close()
@@ -107,13 +108,14 @@ def state_data(state):
     state_name = state.upper()
 
     # Query for total fires per year NV
-    state_fire = f"select fire_year, count(state) as state_count from fires where state = '{state_name}' group by fire_year order by fire_year"
+    state_fire = f"select fire_year, count(state) as state_count, avg(fire_size) as avg_size from fires where state = '{state_name}' group by fire_year order by fire_year"
     state_total = pd.read_sql(state_fire, connection)
 
     # Format the data for Plotly
     state = {
-        "x": state_total["FIRE_YEAR"].values.tolist(),
-        "y": state_total["state_count"].values.tolist(),
+        "year": state_total["FIRE_YEAR"].values.tolist(),
+        "count": state_total["state_count"].values.tolist(),
+        "size": state_total["avg_size"].values.tolist(),
         "type": "mtatter"
     }
     connection.close()
