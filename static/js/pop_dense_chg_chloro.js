@@ -1,4 +1,8 @@
-var map = L.map('map2').setView([37.8, -96], 4);
+let defaultURL5 = "/PopData";
+d3.json(defaultURL5).then(function(pop_data) {
+  console.log(pop_data)
+
+let map = L.map('map2').setView([37.8, -96], 4);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -6,7 +10,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	}).addTo(map); 
 
 
-	var info = L.control();
+	let info = L.control();
 
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
@@ -58,7 +62,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	}
 
 	// Population density data //
-	var geojson = L.geoJson(PopData, {
+	let geojson = L.geoJson(pop_data, {
 		style,
 		onEachFeature
 	}).addTo(map);
@@ -103,4 +107,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		return div;
 	};
 
-	legend.addTo(map);
+	legend.addTo(map)
+	
+});
