@@ -73,9 +73,9 @@ header {
 
 .grid-box {
     display: grid;
-    grid-gap: 2vw;
+    grid-gap: 3vw;
     object-fit: fill;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; 
   }
 

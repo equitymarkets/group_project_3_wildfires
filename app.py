@@ -1,3 +1,4 @@
+
 import pandas as pd
 from flask import (
     Flask,
@@ -35,6 +36,27 @@ def df_to_geojson(df, lat='LATITUDE', lon='LONGITUDE'):
         gjs['features'].append(feature)
     
     return gjs
+
+def heat(df, lat='LATITUDE', lon='LONGITUDE', size='FIRE_SIZE'):
+    # create a new python dict to contain our geojson data, using geojson format
+    hdata = {'data':[]}
+
+    # loop through each row in the dataframe and convert each row to geojson format
+    for index, row in df.iterrows():
+
+        # fill in the coordinates
+        lats = row[lat]
+        lngs = row[lon]
+        sizes = row[size]
+
+
+        # create a feature template to fill in
+        feature = {'lat':lats, 'lon':lngs, 'size':sizes}
+
+        # add this feature (aka, converted dataframe row) to the list of features inside our dict
+        hdata['data'].append(feature)
+    
+    return hdata
 
 
 
@@ -157,32 +179,21 @@ def fire_cause(year):
     connection.close()
     return jsonify(fire_causes)   
 
-@app.route("/geojson")
-def geojson_data():
-    """Return geojson format"""
+@app.route("/heatmap")
+def heatmap_data():
     connection = engine.connect()
 
     # Query fires
-    fire_query = "select LONGITUDE, LATITUDE from FIRES where FIRE_YEAR = 2020 and FIRE_SIZE >= 100"
+    fire_query = "select LONGITUDE, LATITUDE, FIRE_SIZE from FIRES where FIRE_YEAR = 2020 AND fire_size_class IN ('C', 'D', 'E', 'F');"
     fire_data = pd.read_sql(fire_query, connection)
- 
-     # run df_to_geojson and generate geojson 
-    geojson = df_to_geojson(fire_data)
+
+    # Format the data for Plotly
+    heat_data = heat(fire_data)
+    #heatmap_data = dict.fromkeys(heat_data)
 
     connection.close()
-    return jsonify(geojson)
+    return jsonify(heat_data)
 
-#fire heatmap
-@app.route('/fire_heatmap')
-def fire_heatmap():
-   markers=[
-   {
-   'lat':0,
-   'lon':0,
-   'popup':'This is the middle of the map.'
-    }
-   ]
-   return render_template('index.html',markers=markers )
 
 @app.route("/PopData")
 def pop_data():
@@ -243,22 +254,34 @@ def pop_data():
         ]};
 
     return jsonify(PopData)
-# sub-pages enlarge photos and/or add bullet points explaining data
-@app.route('/fire_count')
-def firecount():
-    return render_template('fire_count.html')
 
-@app.route('/fire_count_cause')
-def fire_count_cause():
-    return render_template('fire_count_cause.html')
 
-@app.route('/fire_size_cause')
-def fire_size_cause():
-    return render_template('fire_size_cause.html')
 
-@app.route('/sizes')
-def sizes():
-    return render_template('sizes.html')
+@app.route("/geojson")
+def geojson_data():
+    """Return geojson format"""
+    connection = engine.connect()
+
+    # Query fires
+    fire_query = "select LONGITUDE, LATITUDE from FIRES where FIRE_YEAR = 2020 AND fire_size_class IN ('C', 'D', 'E', 'F');"
+    fire_data = pd.read_sql(fire_query, connection)
+ 
+     # run df_to_geojson and generate geojson 
+    geojson = df_to_geojson(fire_data)
+
+    connection.close()
+    return jsonify(geojson)
+
+@app.route('/fire_heatmap')
+def fire_heatmap():
+   markers=[
+   {
+   'lat':0,
+   'lon':0,
+   'popup':'This is the middle of the map.'
+    }
+   ]
+   return render_template('index.html',markers=markers )
 
 if __name__ == "__main__":
     app.run(debug = True)
