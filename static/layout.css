@@ -1,13 +1,25 @@
-/*            FFF      JJJJ      AAAA     KK    KK    PPPP      DDD
-            FF   FF    JJ  JJ   A    A    KK    KK    PP  PP   DD  DD
-            FF         JJ JJ    A    A    KK    KK    PP  PP       DD
-            FF  FFF    JJJJ     A    A    KK    KK    PPPP       DDD
-            FF    F    J  JJ    A    A    KK    KK    PP        DD
-              FFFF     J   JJ    AAAA      KKKKKK     PP       DDDDDD
+/*            
+                 FFF     JJJJ      AAAA    KK    KK   PPPP      DDD
+               FF   FF   JJ  JJ   A    A   KK    KK   PP  PP   DD  DD    
+               FF        JJ JJ    A    A   KK    KK   PP  PP       DD    
+               FF  FFF   JJJJ     A    A   KK    KK   PPPP       DDD
+               FF    F   J  JJ    A    A   KK    KK   PP        DD       
+                 FFFF    J   JJ    AAAA     KKKKKK    PP       DDDDDD  
 
+----------------------------------------------------------------------------------------
+|  Fiona          |  José           |  Andrew    |  Katie     |   Pratik   |  Derek    |
+|  Blackmon-Burns |  Melvin-Calleja |  Herr      |  Borlie    |   Shah     |  Price    |
+----------------------------------------------------------------------------------------
+|                        (In Memory of Christian Schimelfenig)                         |
+----------------------------------------------------------------------------------------
 
-
+C C   WW      W      WW  IIIII  LL      DDD    FFFFF  IIIII  RRRR    EEEEE   SSSS   C  C
+C C    WW    W W    WW     I    LL      D  D   F        I    RR RR   E      SS      C  C
+        WW  W   W  WW      I    LL      D  D   FFF      I    RRRR    EEE     SSS
+         WWW     WWW       I    LL      D  D   F        I    R  R    E         SS
+          W       W      IIIII  LLLLL   DDD    F      IIIII  R   R   EEEEE  SSSS
 */
+
 body {
     margin: 0;
     padding: 0;
@@ -65,8 +77,6 @@ html, body {
 }
 
 .legend i { 
-    /* width: 18px; 
-    height: 18px;  */
     width: 3%;
     height: 3%;
     float: left; 
@@ -115,14 +125,16 @@ header::before {
 
 .grid-box {
     display: grid;
-    grid-gap: 3vw;
+    grid-gap: 1vw;
     object-fit: fill;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; 
   }
 
 .grid-box img {
-    width: 100%;
+    width: 92%;
+    margin-left: 3%;
+    margin-right: 3%;
     height: auto;
     border-radius: 25px;
     object-fit: cover;
