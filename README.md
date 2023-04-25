@@ -1,4 +1,5 @@
 # Project 3: Wildfires 🔥
+#### Group 2 Members: Derek P, Fiona B, Pratik S, Katie B, Andrew H, Jose M
 
 <img width="100%" alt="Wildfires!" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
 
