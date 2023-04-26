@@ -10,7 +10,7 @@
 
 # As areas have increased in population, do we see a proportional increase in fires? 
 
-### We chose to tackle this question becasue we are aware of the disastrous effects of wildfires across the United States; particularly the West. Our dataset hinges on geographical locations, and we had hypothesized that less populated areas would have larger fires. With less people in these areas, there would be a smaller amount of people in immediate danger, so to save human lives and resources, we theorized that they would let the fires burn, and thus spread over more acres. See below where we share our findings!
+### We chose to tackle this question becasue we are aware of the disastrous effects of wildfires across the United States; particularly the West. Our dataset hinges on geographical locations, and we had hypothesized that less populated areas would have larger fires. With less people in these areas, there would be a smaller amount of people in immediate danger, so to save human lives and resources, we theorized that they would let the fires burn, and thus the fires would spread over more acres. See below where we share our findings!
 
 ### Acres Burned (Top 10 States)
 
