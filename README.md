@@ -72,19 +72,19 @@
 
 <img width="100%" alt="Population Map" src="https://user-images.githubusercontent.com/119986667/234646229-beda4022-b378-44dd-a8fb-3a4c32348be4.png">
 
-  * To test our hypothesis we also wanted to look at trends with fires and population to see if perhaps people are getting closer or moving away from larger the larger. 
+  * To test our hypothesis we also wanted to look at trends with fires and population to see if perhaps people are getting closer to or moving away from areas prone to large fires. 
   
-  * When looking at the heat map, we notice that other than Alaska it is evident that fire growth is most intense in the western United States. As the size of fires increase out west, our curiosity was with population movements in those areas; and there are some alarming tends. We looked at population density growth across the US from 1990 to 2020 to get a sense of where people are moving. Then we looked at those states with high rates of growth to see where they currently stand with population density in relation to the rest of the country. Three states stand out from this perspective: California, Texas, and Arizona.
+  * When looking at the heat map, we notice that other than Alaska it is evident that fire growth is most intense in the western United States. As the size of fires increases out west, our curiosity was with population movements in those areas; and there are some alarming tends. We looked at population density growth across the US from 1990 to 2020 to get a sense of where people are moving. Then we looked at those states with high rates of growth to see where they currently stand with population density in relation to the rest of the country. Three states stand out from this perspective: California, Texas, and Arizona.
 
   * California has been a relatively dense state for some time, and fires have historically been an issue there. What is interesting to note is it continues to grow at a moderate pace of 33%.
 
   * That said, it is Texas and Arizona where the alarm bells ring loudest. There is a lot of red over these states on the heat map (noting some of the largest fires) and both currently are relatively dense states at 112 and 63 people per square mile, respectively. Most notably though, both states have seen substantial growth in 30 years, with Texas growing at a 72% clip and Arizona almost doubling over that period. If these trends continue, it’s safe to expect suburban and rural sprawl to bring people closer to the largest fires.
 
-  * What makes these numbers even more concerning is a link scientists in the Pacific Northwest are finding between Arctic ice melt and wildfires. In a nutshell: Ice melting in the arctic is causing a change in the jet stream that pushes really hot dry air across the western United States, mostly in the fall—which are prime wildfire conditions in the prime wildfire season. For more on this, visit the links from NPR on our website below. 
+  * What makes these numbers even more concerning is a link scientists in the Pacific Northwest are finding between Arctic ice melt and wildfires. In a nutshell: Ice melting in the Arctic is causing a change in the jet stream that pushes really hot dry air across the western United States, mostly in the fall—which presents a high risk of fires during the prime wildfire season. For more on this, visit the links from NPR on our website below. 
 
 ### Heat Map & Summary
 
-<img width="644" alt="Heat Map" src="https://user-images.githubusercontent.com/119986667/234646414-c06b602c-709d-4cab-9069-deaefda3c802.png">
+<img width="100%" alt="Heat Map" src="https://user-images.githubusercontent.com/119986667/234646414-c06b602c-709d-4cab-9069-deaefda3c802.png">
 
   * Here we have our heat map which shows all fires larger than 10 acres that occurred in 2020. We chose this limit because it reduces the number of fires on the display down from roughly 73,000 to around 8,000 in 2020 alone. Mapping all 73k makes it difficult to decern any pattern to the fires because of the large number of small fires that washes the heat map out. Looking at only fires that burn more than 10 acres we can more clearly see the areas impacted by these large fires.
   
