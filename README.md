@@ -1,4 +1,5 @@
 # Project 3: Wildfires 🔥
+
 #### Group 2 Members: Derek P, Fiona B, Pratik S, Katie B, Andrew H, Jose M
 
 <img width="100%" alt="Wildfires!" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
@@ -87,14 +88,14 @@ INSERT FIONA IMAGE
 
 #### Resources
 
-  * https://www.census.gov/data/tables/time-series/dec/density-data-text.html
-
   * https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition
+  
+  * https://www.census.gov/data/tables/time-series/dec/density-data-text.html
 
   * https://www.npr.org/2023/04/12/1169471568/wildfires-are-bigger-arctic-ice-is-melting-now-scientists-say-theyre-linked
 
   * https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/longleaf-pine-restoration/
 
-  * https://wfca.com/articles/what-causes-wildfires gclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE 
+  * https://wfca.com/articles/what-causes-wildfiresgclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE 
 
 ## THANK YOU FOR VISITING OUR SITE, COME BACK SOON!🔥
