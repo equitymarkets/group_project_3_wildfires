@@ -90,16 +90,12 @@ INSERT FIONA IMAGE
 
   * [Project Dataset - 2.3 Million US Wildfires((1992-2020))](https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition)
   
-  * Historical Population Density Data (1910-2020)
-  * https://www.census.gov/data/tables/time-series/dec/density-data-text.html
+  * [Historical Population Density Data (1910-2020)](https://www.census.gov/data/tables/time-series/dec/density-data-text.html)
 
-  * NPR - Wildfires are bigger. Arctic ice is melting. Now, scientists say they're linked : Short Wave
-  * https://www.npr.org/2023/04/12/1169471568/wildfires-are-bigger-arctic-ice-is-melting-now-scientists-say-theyre-linked
+  * [NPR - Wildfires are bigger. Arctic ice is melting. Now, scientists say they're linked : Short Wave](https://www.npr.org/2023/04/12/1169471568/wildfires-are-bigger-arctic-ice-is-melting-now-scientists-say-theyre-linked)
 
-  * The Longleaf Pine
-  * https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/longleaf-pine-restoration/
+  * [The Longleaf Pine](https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/longleaf-pine-restoration/)
 
-  * What Causes Wildfires?
-  * https://wfca.com/articles/what-causes-wildfiresgclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE 
+  * [What Causes Wildfires?](https://wfca.com/articles/what-causes-wildfiresgclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE) 
 
 ## THANK YOU FOR VISITING OUR SITE, COME BACK SOON!🔥
