@@ -48,9 +48,9 @@
   
   * We also see here the number of data points for unknown causes, and indeed recently we can see that this number is higher even than the historical average. Although it was not the primary focus of our study, we note that we did discuss this limitation in the data.
 
-  * The preceding in mind, the point of the study was not to assume that every fire is “bad”, question why some large fires are left to burn. nor speculate the motive of each fire department across 30+ years of data. We want the data to speak for itself.
+  * The preceding in mind, the point of the study was not to assume that every fire is “bad”, question why some large fires are left to burn, nor speculate on the motive of each fire department across 30+ years of data. We want the data to speak for itself.
 
-  * The data below will further explore our assumptions that small fires often occur near human settlements, are often caused by humans, and are extinguished fairly quickly, while larger fires, which of course occur much less in frequency, often occur farther from human settlement, have both human and natural causes (mostly natural), and grow much larger in size due to their distance from populated centers.
+  * The data below will further explore our assumptions that small fires often occur near human settlements, are often caused by humans, and are extinguished fairly quickly, while larger fires, which occur much less in frequency, often occur farther from human settlement, have both human and natural causes (mostly natural), and grow much larger in size due to their distance from populated centers.
 
 ### Summary Statistics
 
