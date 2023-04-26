@@ -56,7 +56,7 @@
 
 <img width="100%" alt="Human vs. Natural Size and Cause" src="https://user-images.githubusercontent.com/119986667/234645071-745660cc-8897-474b-ac53-d41b59f67d06.png">
 
-<img width="100%" alt="Screen Shot 2023-04-26 at 11 44 56 AM" src="https://user-images.githubusercontent.com/119986667/234645250-95aed9dd-0073-4994-86b0-c166f153d030.png">
+<img width="100%" alt="Counts Over Time and by State" src="https://user-images.githubusercontent.com/119986667/234645250-95aed9dd-0073-4994-86b0-c166f153d030.png">
 
   * The count of fire is the same over the years.
 
@@ -70,7 +70,7 @@
 
 ### Population Map
 
-<img width="794" alt="Screen Shot 2023-04-26 at 12 45 41 PM" src="https://user-images.githubusercontent.com/119986667/234646229-beda4022-b378-44dd-a8fb-3a4c32348be4.png">
+<img width="100%" alt="Population Map" src="https://user-images.githubusercontent.com/119986667/234646229-beda4022-b378-44dd-a8fb-3a4c32348be4.png">
 
   * To test our hypothesis we also wanted to look at trends with fires and population to see if perhaps people are getting closer or moving away from larger the larger. 
   
@@ -84,7 +84,7 @@
 
 ### Heat Map & Summary
 
-<img width="644" alt="Screen Shot 2023-04-26 at 11 48 25 AM" src="https://user-images.githubusercontent.com/119986667/234646414-c06b602c-709d-4cab-9069-deaefda3c802.png">
+<img width="644" alt="Heat Map" src="https://user-images.githubusercontent.com/119986667/234646414-c06b602c-709d-4cab-9069-deaefda3c802.png">
 
   * Here we have our heat map which shows all fires larger than 10 acres that occurred in 2020. We chose this limit because it reduces the number of fires on the display down from roughly 73,000 to around 8,000 in 2020 alone. Mapping all 73k makes it difficult to decern any pattern to the fires because of the large number of small fires that washes the heat map out. Looking at only fires that burn more than 10 acres we can more clearly see the areas impacted by these large fires.
   
@@ -98,7 +98,7 @@
 
 #### Resources
 
-<img width="738" alt="Screen Shot 2023-04-26 at 11 48 42 AM" src="https://user-images.githubusercontent.com/119986667/234646664-0f5c6e04-e334-4ce9-8001-0956e51cc235.png">
+<img width="100%" alt="Resources" src="https://user-images.githubusercontent.com/119986667/234646664-0f5c6e04-e334-4ce9-8001-0956e51cc235.png">
 
   * [Historical Population Density Data (1910-2020)](https://www.census.gov/data/tables/time-series/dec/density-data-text.html)
 
