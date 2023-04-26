@@ -4,17 +4,17 @@
 
 <img width="100%" alt="Wildfires!" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
 
-<img width="1440" alt="Screen Shot 2023-04-26 at 11 38 52 AM" src="https://user-images.githubusercontent.com/119986667/234643307-ed473ea7-cbdf-41a2-8ae0-e06bc5f1729d.png">
+<img width="100%" alt="Wildfires in the US header" src="https://user-images.githubusercontent.com/119986667/234643307-ed473ea7-cbdf-41a2-8ae0-e06bc5f1729d.png">
 
-## Welcome to our site about wildfires in the United States! We've gathered data from Kaggle that includes 2.3 million fires in the country from 1992 to 2020. Continue scrolling for an in-depth study of whether or not fires have become larger or more widely spread in the last 30 years.
+## Welcome to our site about wildfires in the United States! We've gathered data from Kaggle that includes 2.3 million fires in the country from 1992 to 2020. Continue scrolling for an in-depth study of whether or not fires have become larger or more widespread in the last 30 years.
 
 # As areas have increased in population, do we see a proportional increase in fires? 
 
-### We chose to tackle this question becasue we are aware of the disastrous effects of wildfires across the United States; particularly the West. Our dataset hinges on geographical locations, and we had hypothesized that less populated areas would have larger fires. With less people in these areas, there would be a smaller amount of people in immediate danger, so to save human lives and resources, we theorized that they would let the fires burn, and thus the fires would spread over more acres. See below where we share our findings!
+### We chose to tackle this question because we are aware of the disastrous effects of wildfires across the United States; particularly in the West. Our dataset hinges on geographical locations, and we had hypothesized that less populated areas would have larger fires. With less people in these areas, there would be a smaller amount of people in immediate danger, so to save human lives and resources, we theorized that they would let the fires burn, and thus the fires would spread over more acres. See below where we share our findings!
 
 ### Acres Burned (Top 10 States)
 
- <img width="1440" alt="Screen Shot 2023-04-26 at 11 40 31 AM" src="https://user-images.githubusercontent.com/119986667/234644208-b5c33c13-900e-4c46-b5af-35ab655dcce8.png">
+ <img width="100%" alt="Wildfires by Year" src="https://user-images.githubusercontent.com/119986667/234644208-b5c33c13-900e-4c46-b5af-35ab655dcce8.png">
 
   * To begin, our first image shows total acreage burned across the top 10 states, across all years. Evidently, Alaska has had the most acres burned as a result of wildfires. This devastating range of fire damage only increased our curiosity of just how much worse fires are getting each year.
 
