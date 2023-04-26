@@ -110,6 +110,6 @@
   
   * [The Longleaf Pine](https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/longleaf-pine-restoration/)
 
-  * [What Causes Wildfires?](https://wfca.com/articles/what-causes-wildfiresgclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE) 
+  * [What Causes Wildfires?](https://wfca.com/articles/what-causes-wildfires/?gclid=CjwKCAjw0ZiiBhBKEiwA4PT9z8dFK3tNWDmkAs6JNVatK31HVNVUnE0RhSPb1d-GXy4Uw0Db4Q_O7xoCN0UQAvD_BwE) 
 
 ## THANK YOU FOR VISITING OUR SITE, COME BACK SOON!🔥
