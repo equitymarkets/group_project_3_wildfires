@@ -52,9 +52,9 @@ INSERT PIE CHART IMAGE
 
 INSERT PRATIK IMAGES
 
-  * The count of fire is the same over years.
+  * The count of fire is the same over the years.
 
-  * The average size in fire increased over years. 
+  * The average size in fire increased over the years. 
 
   * The biggest "Cause" category in fire size is naturally caused fires
 
