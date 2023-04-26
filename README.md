@@ -14,13 +14,13 @@
 
 ### Acres Burned (Top 10 States)
 
- <img width="100%" alt="Wildfires by Year" src="https://user-images.githubusercontent.com/119986667/234644208-b5c33c13-900e-4c46-b5af-35ab655dcce8.png">
+ <img width="100%" alt="Wildfires by State" src="https://user-images.githubusercontent.com/119986667/234644208-b5c33c13-900e-4c46-b5af-35ab655dcce8.png">
 
   * To begin, our first image shows total acreage burned across the top 10 states, across all years. Evidently, Alaska has had the most acres burned as a result of wildfires. This devastating range of fire damage only increased our curiosity of just how much worse fires are getting each year.
 
 ### Number of Fires (Average vs. Total)
 
- <img width="1440" alt="Screen Shot 2023-04-26 at 11 41 22 AM" src="https://user-images.githubusercontent.com/119986667/234644471-966d9b94-118f-4da8-ad26-69c5fbcae8ac.png">
+ <img width="100%" alt="Average Fire Size vs. Total" src="https://user-images.githubusercontent.com/119986667/234644471-966d9b94-118f-4da8-ad26-69c5fbcae8ac.png">
 
   * This graph shows the total number of wildfires and average fire size for each year, from 1992 to 2020. When we say average fire size, we mean the average acreage a wildfire burns. The purpose of this graph is to get a sense of whether wildfires are increasing each year, as well as to uncover if the wildfires are getting worse or burning more area than before.
 
@@ -30,7 +30,7 @@
 
 ### Top 10 Causes of Wildfires
 
-<img width="1440" alt="Screen Shot 2023-04-26 at 11 42 15 AM" src="https://user-images.githubusercontent.com/119986667/234644692-70a20c05-d806-480f-96a6-7f02eabb3f59.png">
+<img width="100%" alt="Causes of Wildfires" src="https://user-images.githubusercontent.com/119986667/234644692-70a20c05-d806-480f-96a6-7f02eabb3f59.png">
 
   * Here we have a chart representing the Top 10 causes of wildfires in the United States. We can see here that debris and open burning make up about a quarter of wildfires in the United States. Two other leading causes are natural and arson--both at around 14%--which represent the two extremes of acceptability within the range of data. 
 
@@ -54,9 +54,9 @@
 
 ### Summary Statistics
 
-<img width="1440" alt="Screen Shot 2023-04-26 at 11 44 21 AM" src="https://user-images.githubusercontent.com/119986667/234645071-745660cc-8897-474b-ac53-d41b59f67d06.png">
+<img width="100%" alt="Screen Shot 2023-04-26 at 11 44 21 AM" src="https://user-images.githubusercontent.com/119986667/234645071-745660cc-8897-474b-ac53-d41b59f67d06.png">
 
-<img width="1440" alt="Screen Shot 2023-04-26 at 11 44 56 AM" src="https://user-images.githubusercontent.com/119986667/234645250-95aed9dd-0073-4994-86b0-c166f153d030.png">
+<img width="100%" alt="Screen Shot 2023-04-26 at 11 44 56 AM" src="https://user-images.githubusercontent.com/119986667/234645250-95aed9dd-0073-4994-86b0-c166f153d030.png">
 
   * The count of fire is the same over the years.
 
