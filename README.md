@@ -88,7 +88,7 @@ INSERT FIONA IMAGE
 
 #### Resources
 
-  * [Project Dataset - 2.3 Million US Wildfires((1992-2020))] (https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition)
+  * [Project Dataset - 2.3 Million US Wildfires((1992-2020))](https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition)
   
   * Historical Population Density Data (1910-2020)
   * https://www.census.gov/data/tables/time-series/dec/density-data-text.html
