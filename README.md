@@ -4,7 +4,7 @@
 
 <img width="100%" alt="Wildfires!" src="https://user-images.githubusercontent.com/119274891/231022049-302a84df-2d5d-4e94-840b-5a9cc1c25437.png">
 
-## Welcome to our site about wildfires in the US. We've gathered data from a Kaggle dataset including 2.3 million fires in our country from 1992 to 2020. Continue scrolling for an in-depth study of whether or not fires have become larger or more spread in the last 30 years.
+## Welcome to our site about wildfires in the US! We've gathered data from a Kaggle dataset including 2.3 million fires in our country from 1992 to 2020. Continue scrolling for an in-depth study of whether or not fires have become larger or more spread in the last 30 years.
 
 # As areas have increased in population, do we see a proportional increase in fires? 
 
