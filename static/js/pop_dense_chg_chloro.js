@@ -3,7 +3,7 @@ d3.json(defaultURL5).then(function(pop_data) {
   console.log(pop_data)
 
 let map = L.map('map2').setView([37.8, -96], 4);
-
+//sets the layer that sits below everything, i.e. streets and other features
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

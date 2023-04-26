@@ -7,8 +7,8 @@
                  FFFF    J   JJ    AAAA     KKKKKK    PP       DDDDDD  
 
 ----------------------------------------------------------------------------------------
-|  Fiona          |  José           |  Andrew    |  Katie     |   Pratik   |  Derek    |
-|  Blackmon-Burns |  Melvin-Calleja |  Herr      |  Borlie    |   Shah     |  Price    |
+|  Fiona          |  José           |   Andrew   |   Katie    |   Pratik  |   Derek    |
+|  Blackmon-Burns |  Melvin-Calleja |   Herr     |   Borlie   |   Shah    |   Price    |
 ----------------------------------------------------------------------------------------
 |                        (In Memory of Christian Schimelfenig)                         |
 ----------------------------------------------------------------------------------------
@@ -19,6 +19,8 @@ C C    WW    W W    WW     I    LL      D  D   F        I    RR RR   E      SS  
          WWW     WWW       I    LL      D  D   F        I    R  R    E         SS
           W       W      IIIII  LLLLL   DDD    F      IIIII  R   R   EEEEE  SSSS
 */
+
+/*  Our CSS file provides style to the html document by selecting elements to change. */
 
 body {
     margin: 0;
@@ -211,6 +213,3 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 } 
-
-
-
