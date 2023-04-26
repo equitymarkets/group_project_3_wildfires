@@ -8,6 +8,8 @@
 
 ## Welcome to our site about wildfires in the United States! We've gathered data from Kaggle that includes 2.3 million fires in the country from 1992 to 2020. Continue scrolling for an in-depth study of whether or not fires have become larger or more widespread in the last 30 years.
 
+## Want to run our app for yourself? Just clone the project and run app.py from the local directory. You will also need to paste the data.sqlite file available from the Kaggle wildfire dataset [here](https://www.kaggle.com/datasets/behroozsohrabi/us-wildfire-records-6th-edition).
+
 # As areas have increased in population, do we see a proportional increase in fires? 
 
 ### We chose to tackle this question because we are aware of the disastrous effects of wildfires across the United States; particularly in the West. Our dataset hinges on geographical locations, and we had hypothesized that less populated areas would have larger fires. With less people in these areas, there would be a smaller amount of people in immediate danger, so to save human lives and resources, we theorized that they would let the fires burn, and thus the fires would spread over more acres. See below where we share our findings!
