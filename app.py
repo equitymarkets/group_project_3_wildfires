@@ -1,70 +1,69 @@
-
+#Imports our dependencies
 import pandas as pd
 from flask import (
     Flask,
     render_template,
     jsonify)
-
 from sqlalchemy import create_engine
-
 import numpy as np
 
+#Initiates our flask app
 app =Flask(__name__, template_folder="html")
 
-
+#Creates a link to our database data.sqlite
 engine = create_engine('sqlite:///data.sqlite')
 
- # Format the data for geojson
+ # Formats the data for geojson
     # https://notebook.community/captainsafia/nteract/applications/desktop/example-notebooks/pandas-to-geojson
 def df_to_geojson(df, lat='LATITUDE', lon='LONGITUDE'):
-    # create a new python dict to contain our geojson data, using geojson format
+    # Creates a new python dict to contain our geojson data, using geojson format
     gjs = {'type':'FeatureCollection', 'features':[]}
 
-    # loop through each row in the dataframe and convert each row to geojson format
+    # Loops through each row in the dataframe and convert each row to geojson format
     for index, row in df.iterrows():
         # create a feature template to fill in
         feature = {'type':'Feature',
                 'geometry':{'type':'Point',
                             'coordinates':[]}}
 
-        # fill in the coordinates
+        # Fills in the coordinates
         feature['geometry']['coordinates'] = [row[lon],row[lat]]
 
-        # add this feature (aka, converted dataframe row) to the list of features inside our dict
+        # Adds this feature (aka, converted dataframe row) to the list of features inside our dict
         gjs['features'].append(feature)
     
     return gjs
 
 def heat(df, lat='LATITUDE', lon='LONGITUDE', size='FIRE_SIZE'):
-    # create a new python dict to contain our geojson data, using geojson format
+    # Creates a new python dict to contain our geojson data, using geojson format
     hdata = {'data':[]}
 
-    # loop through each row in the dataframe and convert each row to geojson format
+    # Loops through each row in the dataframe and convert each row to geojson format
     for index, row in df.iterrows():
 
-        # fill in the coordinates
+        # Fills in the coordinates
         lats = row[lat]
         lngs = row[lon]
         sizes = row[size]
 
 
-        # create a feature template to fill in
+        # Creates a feature template to fill in
         feature = {'lat':lats, 'lon':lngs, 'size':sizes}
 
-        # add this feature (aka, converted dataframe row) to the list of features inside our dict
+        # Adds this feature (aka, converted dataframe row) to the list of features inside our dict
         hdata['data'].append(feature)
     
     return hdata
 
 
-
+# Homepage View
 @app.route("/")
 def home():
     """Render Home Page."""
     return render_template("index.html")
 
 
-
+# Total Fires View
 @app.route("/total")
 def total_data():
     """Return total fires and years"""
@@ -74,7 +73,7 @@ def total_data():
     total_fire = "select fire_year, count(state) as state_count, avg(fire_size) as avg_size from fires where fire_year >= 1992 group by fire_year order by fire_year"
     # United_States_total = pd.read_sql(total_fire, connection)
     United_States_total = pd.read_sql(total_fire, connection)
-    # Format the data for Plotly
+    # Formats the data for Plotly
     US = {
         "year": United_States_total["FIRE_YEAR"].values.tolist(),
         "count": United_States_total["state_count"].values.tolist(),
@@ -83,7 +82,7 @@ def total_data():
     }
     connection.close()
     return jsonify(US)
-
+#Per acre view
 @app.route("/acre")
 def total_acre():
     """Return acre burned for top 10 States"""
@@ -103,6 +102,7 @@ def total_acre():
     connection.close()
     return jsonify(all_years)
 
+# Fire Causes View
 @app.route("/fire_cause")
 def fire_cause_data():
     """Return top 10 causes of fire for dataset"""
@@ -120,6 +120,7 @@ def fire_cause_data():
     connection.close()
     return jsonify(fire_causes)   
 
+# Dynamic State Input from Dropdown Menu
 @app.route("/state/<state>")
 def state_data(state):
     """Return state fires and years"""
@@ -131,7 +132,7 @@ def state_data(state):
     state_fire = f"select fire_year, count(state) as state_count, avg(fire_size) as avg_size from fires where state = '{state_name}' group by fire_year order by fire_year"
     state_total = pd.read_sql(state_fire, connection)
 
-    # Format the data for Plotly
+    # Formats the data for Plotly
     state = {
         "year": state_total["FIRE_YEAR"].values.tolist(),
         "count": state_total["state_count"].values.tolist(),
@@ -141,6 +142,7 @@ def state_data(state):
     connection.close()
     return jsonify(state)
 
+# Dynamic Per Acre Year Data from Dropdown
 @app.route("/acre/<year>")
 def acre(year):
     """Return acre burned for top 10 States in 2011"""
@@ -151,7 +153,7 @@ def acre(year):
     acre = f"select state, round(sum(FIRE_SIZE)) as sum from fires where fire_year = {year} group by state order by sum(FIRE_SIZE) DESC LIMIT 10"
     acre_total = pd.read_sql(acre, connection)
 
-    # Format the data for Plotly
+    # Formats the data for Plotly
     year = {
         "x": acre_total["STATE"].values.tolist(),
         "y": acre_total["sum"].values.tolist(),
@@ -160,6 +162,7 @@ def acre(year):
     connection.close()
     return jsonify(year)
 
+# Dynamic Per Year Fire Cause
 @app.route("/fire_cause/<year>")
 def fire_cause(year):
     """Return top 10 causes of fire for dataset"""
@@ -177,6 +180,7 @@ def fire_cause(year):
     connection.close()
     return jsonify(fire_causes)   
 
+#Heatmap View
 @app.route("/heatmap")
 def heatmap_data():
     connection = engine.connect()
@@ -185,14 +189,14 @@ def heatmap_data():
     fire_query = "select LONGITUDE, LATITUDE, FIRE_SIZE from FIRES where FIRE_YEAR = 2020 AND fire_size_class IN ('C', 'D', 'E', 'F');"
     fire_data = pd.read_sql(fire_query, connection)
 
-    # Format the data for Plotly
+    # Formats the data for Plotly
     heat_data = heat(fire_data)
     #heatmap_data = dict.fromkeys(heat_data)
 
     connection.close()
     return jsonify(heat_data)
 
-
+#Population Dictionary
 @app.route("/PopData")
 def pop_data():
     
@@ -254,7 +258,7 @@ def pop_data():
     return jsonify(PopData)
 
 
-
+# The GeoJSON data
 @app.route("/geojson")
 def geojson_data():
     """Return geojson format"""
@@ -270,6 +274,7 @@ def geojson_data():
     connection.close()
     return jsonify(geojson)
 
+# Fire Heatmap
 @app.route('/fire_heatmap')
 def fire_heatmap():
    markers=[
@@ -281,6 +286,7 @@ def fire_heatmap():
    ]
    return render_template('index.html',markers=markers )
 
+# Sets name of module for python code
 if __name__ == "__main__":
     app.run(debug = True)
 
