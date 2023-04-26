@@ -54,7 +54,7 @@
 
 ### Summary Statistics
 
-<img width="100%" alt="Screen Shot 2023-04-26 at 11 44 21 AM" src="https://user-images.githubusercontent.com/119986667/234645071-745660cc-8897-474b-ac53-d41b59f67d06.png">
+<img width="100%" alt="Human vs. Natural Size and Cause" src="https://user-images.githubusercontent.com/119986667/234645071-745660cc-8897-474b-ac53-d41b59f67d06.png">
 
 <img width="100%" alt="Screen Shot 2023-04-26 at 11 44 56 AM" src="https://user-images.githubusercontent.com/119986667/234645250-95aed9dd-0073-4994-86b0-c166f153d030.png">
 
