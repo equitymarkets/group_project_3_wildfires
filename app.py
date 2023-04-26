@@ -5,8 +5,6 @@ from flask import (
     render_template,
     jsonify)
 
-#from flask_sqlalchemy import SQLAlchemy
-
 from sqlalchemy import create_engine
 
 import numpy as np
